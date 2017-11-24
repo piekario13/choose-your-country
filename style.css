@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 body {
     background-image: url("https://static.pexels.com/photos/227433/pexels-photo-227433.jpeg");
     background-size: cover;
@@ -28,4 +40,19 @@ body h2 {
     font-family: 'Russo One', sans-serif;
     color: #fff;
     font-size: 30px;
+}
+.both {
+    text-align: center;
+}
+[class*="col-"] {
+    min-height: 1px;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.static {
+    text-align: right;
+}
+.variables {
+    text-align: left;
 }
