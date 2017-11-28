@@ -32,11 +32,12 @@ $.ajax({
      function showCountriesList(resp) {
         countriesList.empty();
         resp.forEach(function(item) {
-            $('<li id="name">').text(item.name).appendTo(countriesList);
-            $('<li id="capital">').text(item.capital).appendTo(countriesList);
-            $('<li id="region">').text(item.region).appendTo(countriesList);
-            $('<li id="population">').text(item.population).appendTo(countriesList);
-            $('<li id="currencies">').text(item.currencies).appendTo(countriesList);
+            $('<li id="name">').text("Kraj: " + item.name).appendTo(countriesList);
+            $('<li id="capital">').text("Stolica: " + item.capital).appendTo(countriesList);
+            $('<li id="region">').text("Region: " + item.region).appendTo(countriesList);
+            $('<li id="population">').text("Populacja: " + item.population).appendTo(countriesList);
+            $('<li id="currencies">').text("Waluta: " + item.currencies).appendTo(countriesList);
+            $('<li id="line">').text("------------------------------").appendTo(countriesList);
         });
     }
 }
